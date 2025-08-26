@@ -1,8 +1,8 @@
-🔐 HDE Simulator
+**🔐 HDE Simulator**
 
 A GUI-based Hybrid Data Encryption tool using AES-256-GCM & RSA-2048
 
-📖 Overview
+**📖 Overview**
 
 The HDE Simulator demonstrates modern hybrid cryptography using:
 
@@ -15,7 +15,7 @@ It provides a Tkinter GUI (hde_frontend.py) for user interaction and a backend m
 This project is suitable for learning, simulation, and demonstrating encryption concepts (not production-level security).
 
 
-⚙️ Features
+**⚙️ Features**
 
 ✅ AES-256-GCM file encryption/decryption
 ✅ RSA-2048 hybrid encryption (AES key wrapped with RSA)
@@ -24,7 +24,7 @@ This project is suitable for learning, simulation, and demonstrating encryption 
 ✅ Status logs to track operations
 
 
-📂 Project Structure
+**📂 Project Structure**
 HDE-Simulator/
 │
 ├── hde_backend.py   # Core cryptographic functions (AES & RSA hybrid)
@@ -32,7 +32,7 @@ HDE-Simulator/
 └── README.md        # Project documentation
 
 
-🔑 Cryptographic Design
+**🔑 Cryptographic Design**
 🔹 AES-256-GCM
 
 Key size: 256 bits (32 bytes)
@@ -41,17 +41,17 @@ File format:
 [nonce (12 bytes)] [tag (16 bytes)] [ciphertext]
 
 
-🔹 RSA-2048 (Hybrid Encryption)
+**🔹 RSA-2048 (Hybrid Encryption)**
 Key size: 2048 bits
 Used for: Encrypting the AES session key
 File format:
 [2-byte length][RSA_encrypted_AES_key][nonce][tag][ciphertext]
 
-🔹 Why Hybrid?
+**🔹 Why Hybrid?**
 AES → efficient for large data encryption
 RSA → secure key exchange
 
-⚠️ Disclaimer
+**⚠️ Disclaimer**
 
 This project is for educational/demo purposes only.
 Do not use it in production for sensitive data.
